@@ -5,9 +5,9 @@
 #include <locale.h>
 
 // Prot. Function
-void header(); // cabeçalho
+void header(); // cabeÃ§alho
 void lines(int n);	// linhas
-int getVal(int n);	// recebe o máxima d'e Fibonnaci
+int getVal(int n);	// recebe o mÃ¡xima d'e Fibonnaci
 int fib(int n); // realiza a sequencia de Fibonnaci
 void plus(); // retorna plus(); se for n recebe tipo float
 void cls();	// clear screen
@@ -15,16 +15,16 @@ void cls();	// clear screen
 /* 
 	02 de dezembro de 2019	
 
-    Departamento de T.I., UniProjeção (Taguatinga, Campus I)
+    Departamento de T.I., UniProjeÃ§Ã£o (Taguatinga, Campus I)
     
-    Sistemas de Informação (2º semestre)
+    Sistemas de InformaÃ§Ã£o (2Âº semestre)
     Autor: Yan Almeida Garcia
     
-    00) Leia um número positivo do usuário, então, calcule e imprima a sequencia Fibonnaci até o primeiro número superior ao número lido.
+    00) Leia um nÃºmero positivo do usuÃ¡rio, entÃ£o, calcule e imprima a sequencia Fibonnaci atÃ© o primeiro nÃºmero superior ao nÃºmero lido.
 		Ex.: 30: 0 1 1 2 3 5 8 13 21 34.
 
-	Referência bibliográfica:
-		[01]. "Sequência de Fibonacci", disponível em: https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci
+	ReferÃªncia bibliogrÃ¡fica:
+		[01]. "SequÃªncia de Fibonacci", disponÃ­vel em: https://pt.wikipedia.org/wiki/Sequ%C3%AAncia_de_Fibonacci
 */
 
 int main(){
@@ -36,15 +36,15 @@ int main(){
 
 }
 // functions
-	// cabeçalho
+	// cabeÃ§alho
 void header(){ 
 	int num, res;
 	
 	puts("");
 	lines(78);
-	puts(" | Na matemática, a Sequência de Fibonacci, é uma sequência de números inteiros |\n"
-		 " | começando normalmente por 0 e 1, na qual, cada termo subsequente corresponde |\n"
-		 " | à soma dos dois anteriores. A sequência recebeu o nome do matemático italia- |\n"
+	puts(" | Na matemÃ¡tica, a SequÃªncia de Fibonacci, Ã© uma sequÃªncia de nÃºmeros inteiros |\n"
+		 " | comeÃ§ando normalmente por 0 e 1, na qual, cada termo subsequente corresponde |\n"
+		 " | Ã  soma dos dois anteriores. A sequÃªncia recebeu o nome do matemÃ¡tico italia- |\n"
 		 " | no Leonardo de Pisa, mais conhecido por Fibonacci.\t\t\t\t|\n"
 		 " | Ex.: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, ...   |\n"
 		 " |                                                                              |\n"
@@ -63,17 +63,17 @@ void lines(int n){
 	puts("+");
 }
 
-	// recebe o máxima d'e Fibonnaci
+	// recebe o mÃ¡xima d'e Fibonnaci
 int getVal(int n){
 	do{	
 		printf("\n | Grau: ");	
 		scanf(" %i", &n);
 		if(n == 0) exit(1); // encerra o programa
 		
-		if(n < 0) plus(); // verifica se é n é inteiro
+		if(n < 0) plus(); // verifica se Ã© n Ã© inteiro
 		else fib(n); // se for inteiro >> fib(n);
 	
-	}while(n < 0); // continua após encontrar n > 0
+	}while(n < 0); // continua apÃ³s encontrar n > 0
 
 	return n;
 }
@@ -95,10 +95,10 @@ int fib(int n){
 
 	// retorna plus(); se for n recebe um numero negativo
 void plus(){
-	printf(" Valor inválido.");
+	printf(" Valor invÃ¡lido.");
 	
 	cls();	// clear screen
-	header(); // retorna cabeçalho
+	header(); // retorna cabeÃ§alho
 }
 	// clear screen
 void cls(){ 
